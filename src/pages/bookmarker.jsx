@@ -23,28 +23,28 @@ const bookmarker = () => {
   };
 
   return (
-    <div className="h-full w-full flex justify-center pt-[100px]">
+    <div className="w-full flex justify-center pt-[100px]">
       <form
         onSubmit={handleSubmit}
         className={`${
           darkMode ? "border-white" : "border-black"
-        } h-fit w-fit border-2 p-[20px] rounded-[10px]`}
+        } h-fit w-full md:w-fit border-2 p-[20px] rounded-[10px]`}
       >
         <input
-          className="w-[500px]"
+          className="w-full md:w-[500px]"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           type="text"
           placeholder="Add the Title"
         />
         <input
-          className="w-[500px] mt-[20px] mb-[40px]"
+          className="w-full md:w-[500px] mt-[20px] mb-[40px]"
           value={url}
           onChange={(e) => setUrl(e.target.value)}
           type="text"
           placeholder="Add the URL"
         />
-        <button className="w-full bg-[green] py-[20px] text-[2rem] text-white font-bold">
+        <button className="w-full bg-[green] py-[10px] text-[2rem] text-white font-bold">
           ADD
         </button>
       </form>

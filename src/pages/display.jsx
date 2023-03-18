@@ -16,10 +16,10 @@ const display = () => {
     filterSearch(searchVal);
   };
   return (
-    <div className="w-full h-full flex justify-center pt-[50px]">
-      <div className="h-fit w-fit p-[20px]">
+    <div className="w-full flex justify-center pt-[50px]">
+      <div className="h-fit w-full md:w-fit p-[20px]">
         <input
-          className="w-[500px] outline-none mb-[10px]"
+          className="w-full md:w-[500px] outline-none mb-[10px]"
           type="search"
           placeholder="Search Bookmark"
           value={searchVal}
