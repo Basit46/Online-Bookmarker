@@ -20,7 +20,7 @@ const Navbar = () => {
     <div className="flex justify-between items-center">
       <h1
         onClick={handleClick}
-        className="font-serif text-[2.5rem] cursor-pointer"
+        className="font-serif text-[2rem] sm:text-[2.5rem] cursor-pointer"
       >
         Bookmarker
       </h1>
@@ -31,6 +31,7 @@ const Navbar = () => {
           } fixed top-0  space-y-[30px] space-x-0 md:space-y-0 h-full bg-white w-full md:w-fit justify-center flex-col md:flex-row md:static flex items-center md:space-x-[30px]`}
         >
           <Link
+            onClick={() => setOpenMenu(false)}
             href="/bookmarker"
             className={`${
               darkMode ? "border-white" : "border-black"
@@ -39,6 +40,7 @@ const Navbar = () => {
             ADD TO BOOKMARKS
           </Link>
           <Link
+            onClick={() => setOpenMenu(false)}
             href="/display"
             className={`${
               darkMode ? "border-white" : "border-black"
@@ -56,7 +58,7 @@ const Navbar = () => {
             onClick={handleModeChange}
             className={`${
               darkMode ? "border-white" : "border-black"
-            } w-[50px] h-[50px] border-2 rounded-full ml-[50px] overflow-hidden cursor-pointer bg-white`}
+            } h-[40px] w-[40px] sm:w-[50px] sm:h-[50px] border-2 rounded-full ml-[50px] overflow-hidden cursor-pointer bg-white`}
           >
             <div className="w-1/2 h-full bg-black"></div>
             <div className="w-1/2 h-full bg-white"></div>

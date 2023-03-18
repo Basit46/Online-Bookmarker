@@ -11,7 +11,7 @@ const Bookmark = ({ bookmark }) => {
   };
 
   return (
-    <div className="bg-emerald-600 w-full md:w-[500px] p-[10px] flex items-center justify-between mb-[20px]">
+    <div className="bg-emerald-500 w-full md:w-[500px] p-[10px] flex items-center justify-between mb-[20px]">
       <h1 className="font-bold text-[1.2rem]">
         {bookmark.title.length > 50
           ? bookmark.title.slice(0, 50) + "..."

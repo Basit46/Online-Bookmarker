@@ -12,12 +12,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex justify-between pt-[70px]">
+      <main className="flex flex-col lg:flex-row justify-between pt-[30px] lg:pt-[70px]">
         <div>
-          <h1 className="font-serif font-[700] text-[4rem] leading-[120%]">
+          <h1 className="font-serif font-[700] text-[3rem] vsm:text-[4rem] leading-[120%]">
             Minimalist bookmarking
           </h1>
-          <p className="text-[1.5rem] text-emerald-600 font-normal mt-[10px] mb-[50px]">
+          <p className="text-[1.5rem] text-emerald-600 font-normal mt-[10px] mb-[40px]">
             Declutter your browser by saving links in one elegant and safe
             place.
           </p>
@@ -32,7 +32,7 @@ export default function Home() {
         <div
           className={`${
             darkMode ? "border-white" : "border-black"
-          } hero-right h-fit border-2 p-[30px] ml-[100px]`}
+          } hero-right h-fit border-2 p-[30px] mt-[50px] lg:mt-0 lg:ml-[100px]`}
         >
           <p className="text-[1.3rem] font-bold">why choose Bookmarker?</p>
 

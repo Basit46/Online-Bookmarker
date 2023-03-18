@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
     <div
       className={`${
         darkMode && "bg-black text-white"
-      } h-screen w-screen overflow-x-hidden px-[30px] md:px-[70px] py-[20px]`}
+      } h-screen w-screen overflow-x-hidden px-[10px] sm:px-[30px] md:px-[70px] py-[20px]`}
     >
       <Navbar />
       {children}

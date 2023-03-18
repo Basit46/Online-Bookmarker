@@ -17,7 +17,7 @@ const display = () => {
   };
   return (
     <div className="w-full flex justify-center pt-[50px]">
-      <div className="h-fit w-full md:w-fit p-[20px]">
+      <div className="h-fit w-full md:w-fit p-0 sm:p-[20px]">
         <input
           className="w-full md:w-[500px] outline-none mb-[10px]"
           type="search"

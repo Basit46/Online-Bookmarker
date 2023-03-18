@@ -61,7 +61,9 @@ const AppContext = ({ children }) => {
       SetClones(bookmarks);
     }
     SetClones(
-      bookmarks.filter((bookmark) => bookmark.title.includes(value.trim()))
+      bookmarks.filter((bookmark) =>
+        bookmark.title.toLowerCase().includes(value.toLowerCase().trim())
+      )
     );
   };
   return (
