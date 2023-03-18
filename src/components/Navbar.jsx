@@ -26,9 +26,9 @@ const Navbar = () => {
       </h1>
       <div className="flex items-center">
         <div
-          className={`${
-            openMenu ? "left-0" : "left-[100%]"
-          } fixed top-0  space-y-[30px] space-x-0 md:space-y-0 h-full bg-white w-full md:w-fit justify-center flex-col md:flex-row md:static flex items-center md:space-x-[30px]`}
+          className={`${openMenu ? "left-0" : "left-[100%]"} ${
+            darkMode ? "bg-black" : "bg-white"
+          } fixed top-0  space-y-[30px] space-x-0 md:space-y-0 h-full w-full md:w-fit justify-center flex-col md:flex-row md:static flex items-center md:space-x-[30px]`}
         >
           <Link
             onClick={() => setOpenMenu(false)}
@@ -44,7 +44,7 @@ const Navbar = () => {
             href="/display"
             className={`${
               darkMode ? "border-white" : "border-black"
-            } border-2 px-3 py-2 hover:bg-black hover:text-[white] duration-100`}
+            } border-2 px-3 py-2 vsm:hover:bg-black vsm:hover:text-[white]  duration-100`}
           >
             BOOKMARKS {"(" + clones?.length + ")"}
           </Link>
